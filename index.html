@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <div class="block">
+        <div class="container">
+            <div class="title">
+                РАСЧЕТ СТОИМОСТИ ШТУКАТУРКИ СТЕН
+            </div>
+            <div class="block__img">
+                <img src="img/1.jpg" alt="">
+            </div>
+            <div class="calculator">
+                <div class="calculator__title">Выберите услугу</div>
+                <div class="calculator__inputs">
+                    <div class="calculator__radio">
+                        <input class="radio" type="radio" name="service" value="760" onClick="getServicePrice(this.value)" checked>
+                        <div class="input-btn"></div>
+                        <div class="input-text">
+                            <div class="input-price">Штукатурка стен цементно-песчаным раствором (<span class="price">760</span><span>руб./м2)</span></div>
+                        </div>
+                    </div>
+                    <div class="calculator__radio">
+                        <input class="radio" type="radio" name="service" value="650" onClick="getServicePrice(this.value)">
+                        <div class="input-btn"></div>
+                        <div class="input-text">
+                            <div class="input-price">Штукатурка стен цементно-песчаным раствором (<span class="price">650</span><span>руб./м2)</span></div>
+                        </div>
+                    </div>
+                    <div class="calculator__radio">
+                        <input class="radio" type="radio" name="service" onClick="getServicePrice(this.value)" value="680">
+                        <div class="input-btn"></div>
+                        <div class="input-text">
+                            <div class="input-price">Штукатурка стен цементно-песчаным раствором (<span class="price">680</span><span>руб./м2)</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__bottom">
+                    <div class="calculator__title">Введите площадь стен (м2)</div>
+                    <div class="calculator__input">
+                        <input type="number" min="0" class="input" placeholder="Введите число">
+                    </div>
+                    <div class="calculator__result">
+                        <div class="calculator__result-text">
+                            Стоимость услуги
+                        </div>
+                        <div class="calculator__summ">
+                            <div class="calculator__summ-number">
+                                0
+                            </div>
+                            <div class="calculator__summ-text">
+                                руб.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
